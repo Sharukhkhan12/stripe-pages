@@ -1,10 +1,15 @@
- <head>
-   <title>Success</title>
-   <script>
-     // Auto redirect to app after 2 sec setTimeout(function() { window.location.href = "myapp://stripe-return"; }, 2000); 
-   </script>
- </head>
- <body style="text-align:center; margin-top:50px;">
-   <h1>✅ Onboarding Completed</h1>
-   <p>Redirecting to app...</p>
- </body>undefined</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Failed</title>
+  <script>
+    setTimeout(function() {
+      window.location.href = "myapp://stripe-refresh";
+    }, 2000);
+  </script>
+</head>
+<body style="text-align:center; margin-top:50px;">
+  <h1>❌ Onboarding Incomplete</h1>
+  <p>Redirecting back...</p>
+</body>
+</html>
